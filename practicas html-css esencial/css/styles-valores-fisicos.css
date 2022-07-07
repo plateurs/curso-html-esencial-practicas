@@ -1,0 +1,270 @@
+/* @font-face { 
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-style: normal;
+    font-weight: regular;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.ttf');
+    font-style: normal;
+    font-weight: light;
+} */
+:root{
+
+    --grisesito: #212121;
+    --grisclaro: #616161;
+    --grisoscuro: #131313;
+    --grisfooter: #212429;
+    --amarillito: #FEC62E;
+    --grisespecial: #424242;
+    --grisclarito: #b3b3b3;
+
+}
+
+*{
+    /* margin: 0; */
+    /* list-style: none; */
+    /* writing-mode: vertical-rl; */
+    /* direction: rtl; */
+    /* padding: 0; */
+    margin: 0;
+    text-decoration: none;
+}  
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bg-image{
+
+    padding: 0;
+    margin: 0;
+    background-color: #3c8fc7;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.25), 
+    transparent, rgba(255, 255, 255, 0.1)), url(../imgs/imagenes/patron-1.png);
+    height: 350px;
+
+}
+
+body{
+    background: rgb(255, 240, 240);
+    color: var(--grisesito);
+    font-family: 'Roboto', sans-serif;
+    font-weight: regular;
+    margin: 0;
+
+}
+
+/* font-size's */
+
+header{
+    position: absolute;
+    margin-left: 30px;
+    width: 190px;
+    line-height: 24px;
+    left: -150px;
+    top: 0;
+
+}
+
+nav a{
+    font-size: 14px;
+    color: var(--grisclaro);
+
+}
+nav li{
+    margin-bottom: 16px;
+}
+nav ol{
+    margin-bottom: 24px;
+}
+nav a:hover{
+
+    color: var(--grisoscuro);
+
+}
+nav summary{
+    font-weight: bold;
+    color: var(--grisesito);
+    margin-bottom: 16px;
+}
+nav summary:hover{
+    cursor: pointer;
+    color: var(--grisespecial);
+}
+
+a{
+
+    color: var(--grisesito);
+    
+}
+
+
+h1{
+    font-size: 60px;
+    margin: 64px 10px 16px 10px;
+    font-weight: normal;
+
+}
+
+h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: normal;
+
+}
+h3{
+    font-size: 24px;
+    padding-bottom: 8px;
+    color: var(--grisesito);
+    font-weight: 400;
+    /* outline: 4px solid var(--grisesito);5 */
+}
+#setup h3{
+    margin: 16px 0 24px;
+
+}
+#modelo-de-caja h3{
+    margin: 40px 0 16px;
+}
+#setup p{
+    margin: 16px 0 40px;
+
+}
+p{
+    font-size: 16px;
+    font-family: 'Roboto';
+
+}
+
+/* backgrounds */
+
+pre{
+
+    background: var(--amarillito);
+    padding: 40px;
+    /* width: 500px; */
+    font-family: 'Roboto';
+    font-weight: light;
+
+}
+::selection{
+    background: rgb(255, 180, 180);
+    
+}
+
+.rallita{
+    counter-increment: tittleList;
+}
+
+.rallita::before{
+    content: counter(tittleList) ". ";
+
+}
+
+.rallita::after{
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: var(--grisesito);
+    display: block;
+
+}
+
+hr{
+    border: 1px solid rgba(97, 97, 97, 0.2);
+    margin-bottom: 64px;
+
+}
+
+#conceptos-escenciales h2{
+    margin-top: 0;
+}
+#conceptos-escenciales h3{
+    margin: 40px 0 24px;
+    
+}
+#conceptos-escenciales p{
+    margin:  0 0 16px;
+
+}
+
+#modelo-de-caja h2{
+    margin-top: 64px;
+
+}
+#modelo-de-caja ul li{
+    margin-bottom: 16px;
+}
+#modelo-de-caja ol li{
+    line-height: 24px;
+}
+
+blockquote{
+    margin: 32px 0;
+    font-size: 24px;
+    border-left: 4px solid var(--grisesito);
+    padding-left: 16px;
+    line-height: 24px;
+    color: var(--grisesito);
+}
+blockquote p span{
+    color: var(--grisclaro);
+
+}
+
+#inicio p{
+    margin-bottom: 64px;
+
+}
+
+.wrapper{
+
+    width: 942px;
+    margin: auto;
+    letter-spacing: .7px;
+
+}
+
+.main-content{
+    position: relative;
+    margin-left: 100px;
+}
+
+/* .main-content{
+    border: 1px solid #131313; 
+    padding: 20px;
+
+} */
+
+footer{
+    color: var(--grisclarito);
+    background-color: var(--grisespecial);
+    height: 180px;
+    margin-top: 120px;
+    /* position: absolute; */
+}
+
+footer p{
+    text-align: center;
+    align-items: center;
+
+}
+
+.header-content{
+    position: relative;
+
+}
+
+.header{
+    position: sticky;
+    top: 0;
+
+}
